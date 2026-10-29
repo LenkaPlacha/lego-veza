@@ -1,0 +1,148 @@
+html {
+  body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#bde9ff, #e9f8ff);
+}
+
+.lego-panel {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+.lego {
+  width: 90px;
+  height: 55px;
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.lego:hover {
+  transform: scale(1.1);
+}
+
+.lego::before,
+.lego::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+}
+
+.lego::before {
+  left: 20px;
+}
+
+.lego::after {
+  right: 20px;
+}
+
+.red {
+  background: #ff4d4d;
+}
+
+.blue {
+  background: #3399ff;
+}
+
+.green {
+  background: #33cc66;
+}
+
+.yellow {
+  background: #ffd633;
+}
+
+#veza {
+  width: 180px;
+  min-height: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 4px dashed #888;
+  border-radius: 15px;
+  background: white;
+}
+
+#veza .lego {
+  margin: 3px auto;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+  .lego {
+  width: 90px;
+  height: 55px;
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+  transition: transform 0.2s;
+}
+
+.lego:hover {
+  transform: scale(1.1);
+}
+
+.lego::before,
+.lego::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.45);
+}
+
+.lego::before {
+  left: 20px;
+}
+
+.lego::after {
+  right: 20px;
+}
+  body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#aee4ff, #e9f8ff);
+}
+}
+#fireworks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: explode 1.2s ease-out forwards;
+}
+
+@keyframes explode {
+  0% {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
