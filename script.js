@@ -44,7 +44,9 @@ function vymaz() {
 
   noveZadanie();
 }
-
+function playSuccessSound() {
+  document.getElementById("successSound").play();
+}
 function firework() {
   const container = document.getElementById("fireworks");
 
@@ -96,7 +98,4 @@ function firework() {
       particle.remove();
     }, 1500);
   }
-}
-function playSuccessSound() {
-  document.getElementById("successSound").play();
 }
